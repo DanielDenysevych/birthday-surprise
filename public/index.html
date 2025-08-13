@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise Countdown</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Countdown Section (visible before birthday) -->
+    <div id="countdown-section" class="section">
+        <div class="container">
+            <div class="content">
+                <h1 class="title">🎉 Something Special is Coming!</h1>
+                <p class="subtitle">A birthday surprise is being prepared...</p>
+                
+                <div class="countdown-display">
+                    <div class="time-unit">
+                        <span id="days" class="time-number">00</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours" class="time-number">00</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes" class="time-number">00</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds" class="time-number">00</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <p>🔔 Want to be notified when the surprise goes live?</p>
+                    <a href="signup.html" class="notify-btn">Get Notified via SMS</a>
+                </div>
+
+                <div class="visitor-count">
+                    <p>👥 <span id="visitor-count">0</span> people are waiting for this surprise!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Birthday Surprise Section (visible after countdown ends) -->
+    <div id="surprise-section" class="section hidden">
+        <div class="confetti"></div>
+        
+        <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Birthday Celebration" />
+                    <div class="hero-overlay">
+                        <h3 class="hero-title">🎂 Your Special Day Journey 🎂</h3>
+                        <p class="hero-subtitle">A timeline of amazing memories and moments</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Birthday Timeline -->
+            <div class="birthday-timeline">
+                <h3 class="timeline-header">Memory Timeline</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Early Years" />
+                                <div class="timeline-text">
+                                    <span class="timeline-date">Early Years</span>
+                                    <p>Where it all began! Those precious early moments that shaped the amazing person you've become.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2083&q=80" alt="Adventure Times" />
+                                <div class="timeline-text">
+                                    <span class="timeline-date">Growing Up</span>
+                                    <p>All those incredible adventures, new discoveries, and unforgettable experiences that made life so exciting!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Friendship" />
+                                <div class="timeline-text">
+                                    <span class="timeline-date">Building Bonds</span>
+                                    <p>The wonderful friends who became family, sharing laughter, dreams, and creating memories that last forever.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Achievements" />
+                                <div class="timeline-text">
+                                    <span class="timeline-date">Achievements</span>
+                                    <p>All those incredible milestones, successes, and moments when you proved just how amazing you truly are!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Recent Adventures" />
+                                <div class="timeline-text">
+                                    <span class="timeline-date">This Year</span>
+                                    <p>The latest chapter of your amazing story, filled with new experiences, growth, and wonderful moments!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item center-special">
+                        <div class="timeline-content special-moment">
+                            <div class="timeline-image special-image">
+                                <img src="https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2043&q=80" alt="Today" />
+                                <div class="timeline-text special-text">
+                                    <span class="timeline-date">Right Now</span>
+                                    <p>Today we celebrate YOU! Another year of being absolutely incredible, and the start of another amazing year ahead!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Birthday Wishes Section -->
+            <div class="birthday-wishes">
+                <h3>💝 Special Birthday Message</h3>
+                <div class="wish-card">
+                    <p>Another year older, another year wiser, and another year of being absolutely amazing! 🌟</p>
+                    <p>Thank you for being such an incredible person. Here's to many more years of adventures, laughter, and unforgettable memories!</p>
+                    <p class="signature">- With love and best wishes! 💕</p>
+                </div>
+            </div>
+    </div>
+
+    <!-- Audio for celebration (optional) -->
+    <audio id="celebration-audio" preload="auto">
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Birthday Surprise Notifications</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="signup-body">
+    <!-- Animated Background Elements -->
+    <div class="background-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
+    <div class="container">
+        <div class="signup-container">
+            <!-- Header Section with Animation -->
+            <div class="signup-header">
+                <div class="header-icon">
+                    <div class="icon-circle">
+                        <span class="main-emoji">🎉</span>
+                        <div class="sparkle sparkle-1">✨</div>
+                        <div class="sparkle sparkle-2">⭐</div>
+                        <div class="sparkle sparkle-3">💫</div>
+                    </div>
+                </div>
+                
+                <h1 class="signup-title">
+                    <span class="title-line">Join the</span>
+                    <span class="title-line gradient-text">Birthday Surprise!</span>
+                </h1>
+                
+                <p class="signup-subtitle">
+                    Be the first to know when the amazing birthday celebration goes live!
+                </p>
+
+                <!-- Benefits Section -->
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📱</div>
+                        <span class="benefit-text">Instant SMS Alert</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⚡</div>
+                        <span class="benefit-text">Real-time Notification</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎊</div>
+                        <span class="benefit-text">Exclusive Access</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Signup Form -->
+            <div class="form-container">
+                <form id="signup-form" class="enhanced-form">
+                    <div class="form-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <span class="progress-text" id="progress-text">Step 1 of 3</span>
+                    </div>
+
+                    <!-- Step 1: Name -->
+                    <div class="form-step active" data-step="1">
+                        <div class="step-header">
+                            <h3 class="step-title">What's your name?</h3>
+                            <p class="step-subtitle">We'd love to know who's joining the celebration!</p>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <div class="input-icon">👤</div>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    placeholder="Enter your first name"
+                                    required
+                                    class="form-input"
+                                    autocomplete="given-name"
+                                >
+                                <div class="input-border"></div>
+                                <div class="input-focus-effect"></div>
+                            </div>
+                            <div class="input-feedback" id="name-feedback"></div>
+                        </div>
+
+                        <button type="button" class="next-btn" data-next="2">
+                            <span>Continue</span>
+                            <div class="btn-icon">→</div>
+                        </button>
+                    </div>
+
+                    <!-- Step 2: Phone -->
+                    <div class="form-step" data-step="2">
+                        <div class="step-header">
+                            <h3 class="step-title">Your phone number</h3>
+                            <p class="step-subtitle">We'll send you an SMS when the surprise is ready!</p>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <div class="input-icon">📱</div>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    placeholder="(555) 123-4567"
+                                    required
+                                    class="form-input"
+                                    autocomplete="tel"
+                                >
+                                <div class="input-border"></div>
+                                <div class="input-focus-effect"></div>
+                            </div>
+                            <div class="input-feedback" id="phone-feedback"></div>
+                            <div class="input-help">
+                                <div class="help-icon">🔒</div>
+                                <span>Your number is safe with us - only used for this birthday surprise!</span>
+                            </div>
+                        </div>
+
+                        <div class="step-buttons">
+                            <button type="button" class="back-btn" data-back="1">
+                                <div class="btn-icon">←</div>
+                                <span>Back</span>
+                            </button>
+                            <button type="button" class="next-btn" data-next="3">
+                                <span>Continue</span>
+                                <div class="btn-icon">→</div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Email & Confirmation -->
+                    <div class="form-step" data-step="3">
+                        <div class="step-header">
+                            <h3 class="step-title">Almost there!</h3>
+                            <p class="step-subtitle">Add your email for backup notifications (optional)</p>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <div class="input-icon">✉️</div>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="your.email@example.com (optional)"
+                                    class="form-input"
+                                    autocomplete="email"
+                                >
+                                <div class="input-border"></div>
+                                <div class="input-focus-effect"></div>
+                            </div>
+                            <div class="input-feedback" id="email-feedback"></div>
+                        </div>
+
+                        <!-- Enhanced Consent -->
+                        <div class="consent-section">
+                            <label class="consent-checkbox">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <div class="checkbox-custom">
+                                    <div class="checkbox-checkmark">✓</div>
+                                </div>
+                                <div class="consent-text">
+                                    <strong>Yes, notify me!</strong> I agree to receive SMS notifications for this birthday surprise.
+                                    <div class="consent-subtext">You can unsubscribe anytime by replying STOP</div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Preview Section -->
+                        <div class="preview-section">
+                            <h4 class="preview-title">📋 Summary</h4>
+                            <div class="preview-card">
+                                <div class="preview-item">
+                                    <span class="preview-label">Name:</span>
+                                    <span class="preview-value" id="preview-name">-</span>
+                                </div>
+                                <div class="preview-item">
+                                    <span class="preview-label">Phone:</span>
+                                    <span class="preview-value" id="preview-phone">-</span>
+                                </div>
+                                <div class="preview-item">
+                                    <span class="preview-label">Email:</span>
+                                    <span class="preview-value" id="preview-email">Not provided</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-buttons">
+                            <button type="button" class="back-btn" data-back="2">
+                                <div class="btn-icon">←</div>
+                                <span>Back</span>
+                            </button>
+                            <button type="submit" class="submit-btn" id="submit-btn">
+                                <div class="btn-content">
+                                    <span class="btn-text">🎯 Sign Me Up!</span>
+                                    <div class="btn-loader hidden">
+                                        <div class="loader-spinner"></div>
+                                        <span>Signing up...</span>
+                                    </div>
+                                </div>
+                                <div class="btn-ripple"></div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Enhanced Success Message -->
+                <div id="success-section" class="success-section hidden">
+                    <div class="success-animation">
+                        <div class="success-circle">
+                            <div class="success-checkmark">✓</div>
+                        </div>
+                        <div class="celebration-emojis">
+                            <span class="celebration-emoji">🎉</span>
+                            <span class="celebration-emoji">🎊</span>
+                            <span class="celebration-emoji">✨</span>
+                            <span class="celebration-emoji">🎈</span>
+                        </div>
+                    </div>
+
+                    <h2 class="success-title">Welcome to the Party!</h2>
+                    <p class="success-message">
+                        You're all set! We'll send you an SMS when the birthday surprise goes live.
+                    </p>
+
+                    <div class="success-details">
+                        <div class="detail-card">
+                            <div class="detail-icon">📅</div>
+                            <div class="detail-content">
+                                <strong>Surprise Date</strong>
+                                <span>August 16, 2025</span>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <div class="detail-icon">⏰</div>
+                            <div class="detail-content">
+                                <strong>Time</strong>
+                                <span>6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <div class="detail-icon">📱</div>
+                            <div class="detail-content">
+                                <strong>Notification</strong>
+                                <span>SMS Alert</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="success-actions">
+                        <a href="index.html" class="action-btn primary">
+                            <div class="btn-icon">⏰</div>
+                            <span>View Countdown</span>
+                        </a>
+                        <button id="share-signup" class="action-btn secondary">
+                            <div class="btn-icon">📤</div>
+                            <span>Share with Friends</span>
+                        </button>
+                    </div>
+
+                    <div class="social-proof">
+                        <div class="proof-item">
+                            <span class="proof-number" id="total-signups">0</span>
+                            <span class="proof-label">people signed up</span>
+                        </div>
+                        <div class="proof-divider">•</div>
+                        <div class="proof-item">
+                            <span class="proof-number" id="days-left">0</span>
+                            <span class="proof-label">days to go</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enhanced Error Section -->
+                <div id="error-section" class="error-section hidden">
+                    <div class="error-animation">
+                        <div class="error-circle">⚠️</div>
+                    </div>
+                    <h3 class="error-title">Oops! Something went wrong</h3>
+                    <p class="error-message" id="error-text">
+                        Please check your information and try again.
+                    </p>
+                    <button id="retry-btn" class="retry-btn">
+                        <div class="btn-icon">🔄</div>
+                        <span>Try Again</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="trust-section">
+                <div class="trust-item">
+                    <div class="trust-icon">🔒</div>
+                    <span class="trust-text">Secure & Private</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <span class="trust-text">Instant Delivery</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🚫</div>
+                    <span class="trust-text">No Spam Ever</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-content">
+            <div class="loading-animation">
+                <div class="loading-circle"></div>
+                <div class="loading-circle"></div>
+                <div class="loading-circle"></div>
+            </div>
+            <h3 class="loading-title">Creating your birthday surprise access...</h3>
+            <p class="loading-subtitle">This will only take a moment</p>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

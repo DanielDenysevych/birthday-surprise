@@ -1,0 +1,8 @@
+{
+  "name": "birthday-surprise-countdown",
+  "version": "1.0.0",
+  "dependencies": {
+    "@vercel/kv": "^1.0.1",
+    "twilio": "^4.19.0"
+  }
+}
